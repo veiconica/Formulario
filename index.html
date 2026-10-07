@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="titulos">
+            <h1>Crie e compartilhe seu evento.</h1>
+            <h3>O primeiro passo, é preencher esse formulário de inscrição.</h3>
+        </div>
+    </header>
+    <form class="formulario">
+        <fieldset class="fieldset">
+            <h1>Informações do Evento</h1>
+            <hr>
+            <label class="label">Título do evento<span>(mínimo 8 caracteres)</span></label>
+            <input class="input" type="text" required >
+            <label class="label">Link do evento<span>(comece com https://)</span></label>
+            <input class="input" type="url" required >
+            <label class="label">Whatsapp para contato<span>(somente números)</span></label>
+            <input class="input" type="number " required>
+            <label class="label">Informações extras</label>
+            <textarea class="caixa_texto"></textarea>
+            <label class="label">Categoria</label>
+            <select class="input" required>
+                <option class="option2" disabled selected>Tipo do evento</option>
+                <option class="option">Show</option>
+                <option class="option">Festa</option>
+            </select>
+        </fieldset>
+        <fieldset class="fieldset">
+            <h1>Privacidade</h1>
+            <hr>
+            <label class="label">E-mail do administrador<span>(digite um email válido)</span></label>
+            <input class="input" type="email" required>
+            <label class="label">Senha de acesso para os participantes<span>(mínimo 8 caracteres)</span></label>
+            <input class="input" type="password" required>
+            <input type="checkbox" class="marcar">
+            <label class="evento">Evento privado</label>
+        </fieldset>
+        <fieldset class="fieldset">
+            <h1>Dia e Hora</h1>
+            <hr>
+            <div class="dataehora">
+                <div class="grupodata">
+                    <label class="label">Data</label>
+                    <input type="date" class="data" required>
+                </div>
+                <div class="grupohora">
+                    <label class="label">Das</label>
+                    <input type="time" class="hora" required>
+                </div>
+                <div class="grupohora">
+                    <label class="label">Até</label>
+                    <input type="time" class="hora" required>
+                </div>
+            </div>
+        </fieldset>
+        <footer class="rodape">
+            <button class="botao">Salvar Evento</button>
+        </footer>
+    </form>
+</body>
+</html>
